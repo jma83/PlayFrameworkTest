@@ -1,0 +1,24 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+POST /usuario controllers.UsuarioController.createUsuario(request: Request)
+GET /usuario controllers.UsuarioController.getUsuario(request: Request)
+PUT /usuario controllers.UsuarioController.updateUsuario(index: Integer,request: Request)
+DELETE /usuario controllers.UsuarioController.deleteUsuario(index: Integer)
+
+POST /usuario2 controllers.UsuarioController2.createUsuario(request: Request)
+GET /usuario2 controllers.UsuarioController2.getUsuario(request: Request)
+PUT /usuario2 controllers.UsuarioController2.updateUsuario(index: Integer,request: Request)
+DELETE /usuario2 controllers.UsuarioController2.deleteUsuario(index: Integer)
+
+POST /usuario3 controllers.UsuarioController3.createUsuario(request: Request)
+GET /usuario3 controllers.UsuarioController3.getUsuario(request: Request)
+
+POST /usuario4 controllers.UsuarioController3.createUsuario(request: Request)
+GET /usuario4 controllers.UsuarioController3.getUsuario(request: Request)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(file)

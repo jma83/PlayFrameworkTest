@@ -1,0 +1,9 @@
+@(user: Usuario)
+
+<user>
+    <nick>@user.getNick()</nick>
+    <age>@user.getAge()</age>
+    @if(user.getAge() != null && user.getAge() >= 10){
+    <mayor_edad/>
+    }
+</user>
